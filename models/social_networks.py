@@ -50,8 +50,10 @@ class FBAuth(object):
     # authorization_base_url = 'https://www.facebook.com/v3.2/dialog/oauth?'
     authorization_base_url = 'https://www.facebook.com/dialog/oauth?'
     token_url = 'https://graph.facebook.com/oauth/access_token'
-    fb_client_id = '1000237797032383'
-    fb_secret = '1607b1aebd91779669a6791c5270f215'
+
+    # credentials from your app
+    fb_client_id = '1000237797032...'
+    fb_secret = '1607b1aebd91779669a6791c5270f...'
     # scope = 'email,  first_name, last_name, ink, birthday, picture'
     scope = 'email, name, link, picture'
 
@@ -118,8 +120,10 @@ class GoogleAuth(object):
         self.authorization_base_url = "https://accounts.google.com/o/oauth2/v2/auth"
         self.token_url = "https://accounts.google.com/o/oauth2/token"
         self.scope = ["https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"]
-        self.go_client_id = '133477693294-adm133ie6enqs7hm5b1naloar94thefp.apps.googleusercontent.com'
-        self.go_secret = 'grKsgZgBmh6BJW_8FIKuChWx'
+
+        # credentials from your app
+        self.go_client_id = '...77693294-adm133ie6enqs7hm5b1naloar94thefp.apps.googleusercontent.com'
+        self.go_secret = '..sgZgBmh6BJW_8FIKuC...'
 
     def get_goo(self, root_url=None):
         redirect_url = root_url + 'social/goo'
@@ -149,8 +153,9 @@ class LnAuth(object):
         self.authorizations_base_url = 'https://www.linkedin.com/oauth/v2/authorization'
         self.token_url = 'https://www.linkedin.com/oauth/v2/accessToken'
 
-        self.ln_client_id = '86x2bp5dw3hu8s'
-        self.ln_secret = 'tf8EAQi2Lozc2oPc'
+        # credentials from your app
+        self.ln_client_id = '..2bp5dw3hu8..'
+        self.ln_secret = 't..EAQi2Loz..'
 
     def get_ln(self, root_url=None):
         redirect_uri = root_url + 'social/ln'
@@ -170,7 +175,8 @@ class LnAuth(object):
         r = requests.get(
             'https://api.linkedin.com/v2/me?projection=(id,firstName,lastName,profilePicture(displayImage~:playableStreams))',
             headers=headers)
-        r_email = requests.get('https://api.linkedin.com/v2/emailAddress?q=members&projection=(elements*(handle~))', headers=headers)
+        r_email = requests.get('https://api.linkedin.com/v2/emailAddress?q=members&projection=(elements*(handle~))',
+                               headers=headers)
         if r.status_code == 200:
             user = self.parse_data(r.json())
             user['email'] = r_email.json()['elements'][0]['handle~']['emailAddress']
