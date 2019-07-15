@@ -10,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.36206895">
+    <splitter split-orientation="horizontal" split-proportion="0.8333333">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="main_routes.py" pinned="false" current-in-tab="false">
@@ -34,7 +34,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../Oauth/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="140">
@@ -52,11 +52,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="social_networks.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="social_networks.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../Oauth/models/social_networks.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1350">
-                  <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+                <state relative-caret-position="338">
+                  <caret line="120" column="38" lean-forward="true" selection-start-line="120" selection-start-column="38" selection-end-line="120" selection-end-column="38" />
                   <folding>
                     <element signature="e#0#14#0" expanded="true" />
                   </folding>
@@ -266,6 +266,7 @@
         <option value="$PROJECT_DIR$/../Oauth/models/Users.py" />
         <option value="$PROJECT_DIR$/../Oauth/database.py" />
         <option value="$PROJECT_DIR$/../Oauth/models/user.py" />
+        <option value="$PROJECT_DIR$/../Oauth/models/social_networks.py" />
       </list>
     </option>
   </component>
@@ -281,7 +282,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="82" />
     <option name="y" value="30" />
-    <option name="width" value="1118" />
+    <option name="width" value="1488" />
     <option name="height" value="1008" />
   </component>
   <component name="ProjectView">
@@ -352,8 +353,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="82" y="30" width="1118" height="1008" extended-state="0" />
-    <editor active="true" />
+    <frame x="82" y="30" width="1488" height="1008" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -362,7 +362,7 @@
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.2682081" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info active="true" anchor="bottom" x="90" y="396" width="1807" height="312" id="Terminal" order="11" visible="true" weight="0.30751175" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08022388" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23925105" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -662,16 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Oauth/models/social_networks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Oauth/routes/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -760,13 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Oauth/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="109" selection-start-line="109" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Oauth/database.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -779,6 +762,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Oauth/models/user.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Oauth/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="109" selection-start-line="109" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Oauth/models/social_networks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="120" column="38" lean-forward="true" selection-start-line="120" selection-start-column="38" selection-end-line="120" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
