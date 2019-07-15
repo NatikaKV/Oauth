@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="page-content">
+
+{% if user %}
+{% if user.get('first_name') %}{{user['first_name'] }} {{user['last_name']}} {% else %} {{user['name']}}
+{% endif %}
+<a href="/logout">Logout</a>
+
+{% elif soc %}
+<a href="{{ soc.fb }}">Facebook</a>
+<a href="{{ soc.ln }}">Linkedlin</a>
+<a href="{{ soc.goo}}">Google</a>
+<!--<a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=86x2bp5dw3hu8s&redirect_uri=https%3A%2F%2Flocalhost%3A7777%2Fsocial%2Fln&state=fooobar&scope=r_liteprofile%20r_emailaddress%20w_member_social">hh</a>-->
+{% endif %}
+<a href="{{ url_for('main.user_profile')}}">Profile</a>
+<a href="{{ url_for('main.logout') }}">Logout</a>
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>
